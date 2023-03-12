@@ -1,0 +1,36 @@
+Q1. What is an Exception in python? Write the differene between Exceptions and Syntex errors.
+'''
+'''ANSWER'''
+'''
+Exception is error that occurs during the execution of a program.
+Exception error occurs when there is wrong input, or file is not found due to any reason
+or incorrect attribute or division by zero. Such errors disturbs the flow of program
+any code written after such error codes will not be executed. We can use try-except
+method to handle such exceptions.
+
+Syntax error is caused when code is not written correctly for example, not completing quotes"" or ''
+while enetring string. There is no provision of handling syntax code, we need to correct our code in such type of errors.
+
+'''
+'''
+Q2. What happens when as exception is not handled? explain with an example.
+'''
+'''ANSWER'''
+'''
+When exception is not handled system will show an error
+and code after that will not be executed.
+Python executes code line by line therefore, it will not execute any code after the error.
+Therefore, exception handling is necessary to smooth running of our program.
+'''
+
+try:
+    print(z)
+except:
+    print("This is name error")
+    
+'''
+When exception is handled above code will run and give result, followed to running of below 
+code, which will show error as exception is not handled
+'''
+print("Here 'z' is not defined hence it is going to show name error")
+print(z)
